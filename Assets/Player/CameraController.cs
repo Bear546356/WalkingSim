@@ -24,7 +24,7 @@ public class CameraController : MonoBehaviour
 
         // Calculate vertical rotation and clamp it so you can't flip upside down
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, -90f, 64.04f);
 
         // Apply vertical rotation to the camera itself
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
