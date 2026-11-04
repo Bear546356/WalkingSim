@@ -123,6 +123,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &193017696
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.9631042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.9631042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.9631042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.9443
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4137
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 138.98451
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6830139
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6830118
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.18301211
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.18301266
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9844e2b711a3aee48b1cebcc1bc6c789, type: 2}
+    - target: {fileID: 919132149155446097, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
+      propertyPath: m_Name
+      value: Base_Space
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a11a36cd00330eb4c986aac0b6630735, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,16 +423,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 834358277}
-  normalSpeed: 12
+  walkSpeed: 6
   gravity: -9.81
   jumpHeight: 3
   sprintSpeed: 24
-  speed: 12
+  currentSpeed: 0
   groundCheck: {fileID: 1023973680}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  isSprinting: 0
 --- !u!143 &834358277
 CharacterController:
   m_ObjectHideFlags: 0
